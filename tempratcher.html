@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temperature</title>
+    <style>
+        .cont{
+            border: solid;
+            display: flexbox;
+            width: 250px;
+            margin-right: 100px;
+            text-align: center;
+            margin-left: 40px;
+            margin-bottom: 20px;
+            border-color: aliceblue;
+            background-color:rgb(221, 225, 225);
+            box-shadow: 5px 5px 15px 15px rgb(225, 232, 227);
+            height: 340px;
+        }
+        h1{
+            color: rgb(13, 13, 13);
+
+          
+        }
+        #sub{
+            background-color: rgb(240, 101, 58);
+            border-radius: 5px;
+        }
+         #sub:hover{
+            background-color: coral;
+            cursor: pointer;
+         }
+         #tokelvin{
+            margin-left: -1px;
+         }
+       #kelvin{
+        margin-left: -18px;
+     
+       }
+    </style>
+</head>
+<body>
+    <form class="cont">
+<h1>temperature <br> conversation</h1>
+<input type="number" id="textbox"  placeholder="0" ><br>
+<input type="radio" id="tofahrenheit"name="war"value="gra" checked>
+<label for="tofahrenheit">Celsius ⮕ Fahrenheit</label><br>
+<input type="radio" id="tocelsius"name="war"value="gra" >
+<label for="tocelsius">Fahrenheit ⮕ Celsius</label><br>
+<input type="radio" id="tokelvin"name="war"value="gra">
+<label for="tokelvin">Fahrenheit ⮕ kelvin</label><br>
+<input type="radio" id="kelvin"name="war"value="gra">
+<label for="kelvin">celsiuse ⮕ kelvin
+</label><br>
+<button id="sub" onclick="convert()" type="button">submit</button>
+<p id="result">select a unit</p>
+</form>
+<script src="./tempera.js"></script>
+</body>
+</html>
